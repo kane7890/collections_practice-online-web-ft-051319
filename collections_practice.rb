@@ -53,4 +53,12 @@ end
 
 def add_s(array)
   newarr=[]
-  array.each_with_index.collect
+  array.each_with_index.collect do |element, index| 
+      if index != 2 
+        element + "s"
+      else
+        element
+      end
+    end
+end
+  
